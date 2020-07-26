@@ -11,6 +11,7 @@
 
 * {
   box-sizing: border-box;
+  outline: none;
   margin: 0;
   padding: 0;
 }
@@ -19,12 +20,16 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #ecf0f1;
   color: #333;
 }
 
+h1 {
+  color: #302e4d;
+}
+
 a {
-  color: var(--primary-color);
+  color: #302e4d;
   text-decoration: none;
 }
 
@@ -71,7 +76,7 @@ img {
 }
 
 .text-primary {
-  color: var(--primary-color);
+  color: #504e70;
 }
 
 .text-dark {
@@ -186,7 +191,7 @@ img {
 .btn {
   display: inline-block;
   background: var(--light-color);
-  color: #333;
+  color: #ffffff;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
   border: none;
@@ -194,6 +199,7 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  background-color: #f02424;
 }
 
 .btn-link {
@@ -231,13 +237,13 @@ img {
   color: #333;
 }
 
-.btn-primary,
+/* .btn-primary,
 .bg-primary,
 .badge-primary,
 .alert-primary {
   background: var(--primary-color);
   color: #fff;
-}
+} */
 
 .btn-light,
 .bg-light,
@@ -303,7 +309,15 @@ input {
   margin-top: 0.3rem;
   color: #888;
 }
-
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -315,6 +329,7 @@ textarea {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 input[type="submit"],
@@ -339,7 +354,8 @@ button {
 
 .form-container h1,
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
 }
 
@@ -361,9 +377,11 @@ table th {
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  border-bottom: solid 1px var(--primary-color);
+  border-bottom: solid 1px white;
   opacity: 0.9;
   margin-bottom: 1rem;
+  background-color: #fdf9ff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .navbar ul {
@@ -371,13 +389,13 @@ table th {
 }
 
 .navbar a {
-  color: #fff;
+  color: #302e4d;
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
 
 .navbar a:hover {
-  color: var(--light-color);
+  color: #f02424;
 }
 
 .navbar .welcome span {
@@ -390,14 +408,14 @@ table th {
 }
 .item-enter-active {
   opacity: 1;
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in;
 }
 .item-exit {
   opacity: 1;
 }
 .item-exit-active {
   opacity: 0;
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 1000ms ease-in;
 }
 
 /* Mobile Styles */
