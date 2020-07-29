@@ -1,0 +1,36 @@
+:root {
+  --red: #f02424;
+  --header: #302e4d;
+  --text: #504e70;
+  --back: #fdf9ff;
+  --body: #f2f2fc;
+  --plain: #fff;
+}
+.header {
+  text-align: center;
+  color: var(--header);
+}
+.text {
+  padding-top: 1.5px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  color: var(--text);
+}
+.users {
+  display: flex;
+  margin: 40px 0;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  margin-right: 250px;
+}
+.image .profile {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 8px solid var(--back);
+  -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}

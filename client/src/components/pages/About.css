@@ -1,0 +1,24 @@
+:root {
+  --red: #f02424;
+  --header: #302e4d;
+  --text: #504e70;
+  --back: #fdf9ff;
+  --body: #f2f2fc;
+  --plain: #ffffff;
+}
+.social {
+  height: 30px;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin: 45px 10px auto;
+  border-radius: 15px;
+  border: 2px transparent;
+  background: var(--red);
+  color: var(--plain);
+  transition: 0.5s;
+}
+.social:hover {
+  transform: scale(1.1);
+}
